@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PetSafe | Reporte de Mascotas Extraviadas</title>
+    <meta name="description" content="Plataforma PetSafe para reportar mascotas perdidas y encontradas. Llena el formulario para facilitar la recuperación rápida en la comunidad.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Plataforma PetSafe</h1>
+        <p>Ayudando a que cada mascota vuelva a casa.</p>
+    </header>
+
+    <main>
+        <section class="formulario-contenedor">
+            <h2>Reportar Mascota</h2>
+            
+            <form id="formPetSafe">
+                <div class="grupo-input">
+                    <label for="nombreMascota">Nombre de la mascota (si lo sabe):</label>
+                    <input type="text" id="nombreMascota" name="nombreMascota" placeholder="Ej. Firulais" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="ubicacion">Última ubicación vista:</label>
+                    <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej. Parque Central" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="correoContacto">Tu correo de contacto:</label>
+                    <input type="email" id="correoContacto" name="correoContacto" required>
+                </div>
+
+                <input type="submit" value="Enviar Reporte">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PetSafe. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
