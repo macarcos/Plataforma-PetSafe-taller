@@ -13,27 +13,33 @@
 
     <header>
         <h1>Plataforma PetSafe</h1>
-        <p>Ayudando a que cada mascota vuelva a casa.</p>
+        <p>Ayudando a que cada mascota vuelva a casa. Completa el reporte a continuación.</p>
     </header>
 
     <main>
         <section class="formulario-contenedor">
             <h2>Reportar Mascota</h2>
             
-            <form id="formPetSafe">
+            <form id="formPetSafe" action="/registro" method="POST">
+                
                 <div class="grupo-input">
                     <label for="nombreMascota">Nombre de la mascota (si lo sabe):</label>
                     <input type="text" id="nombreMascota" name="nombreMascota" placeholder="Ej. Firulais" required>
                 </div>
 
                 <div class="grupo-input">
-                    <label for="ubicacion">Última ubicación vista:</label>
-                    <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej. Parque Central" required>
+                    <label for="fechaExtravio">Fecha de extravío:</label>
+                    <input type="date" id="fechaExtravio" name="fechaExtravio" required>
                 </div>
 
                 <div class="grupo-input">
                     <label for="correoContacto">Tu correo de contacto:</label>
-                    <input type="email" id="correoContacto" name="correoContacto" required>
+                    <input type="email" id="correoContacto" name="correoContacto" placeholder="usuario@correo.com" required>
+                </div>
+
+                <div class="grupo-input">
+                    <input type="checkbox" id="aceptoTerminos" name="aceptoTerminos" required>
+                    <label for="aceptoTerminos">Confirmo que la información es real.</label>
                 </div>
 
                 <input type="submit" value="Enviar Reporte">
